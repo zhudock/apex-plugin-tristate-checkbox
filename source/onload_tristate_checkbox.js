@@ -2,7 +2,7 @@ function onload_tristate_checkbox(checkbox_element, options) {
     var checkbox_item = apex.jQuery("#" + checkbox_element),
         value_item = apex.jQuery("#" + checkbox_element + "_HIDDEN");
 
-    checkbox_item.tristate({
+    checkbox_item.addClass('tristate').removeAttr('value').tristate({
         value: options.value,
         state: options.state,
         checked: options.checked,
